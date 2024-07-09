@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style_Profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container light-style flex-grow-1 container-p-y">
+        <h4 class="font-weight-bold py-3 mb-4">
+            個人檔案
+        </h4>
+        <div class="card overflow-hidden">
+            <div class="row no-gutters row-bordered row-border-light">
+                <div class="col-md-3 pt-0">
+                    <div class="list-group list-group-flush account-settings-links">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list"
+                            href="#account-general">一般</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-change-password">更改密碼</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-info">個人簡介</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-social-links">社群連結</a>
+                        
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#bow-info">弓具資訊</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-tbh">個人練習狀況</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-tbh">社課資訊</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#bow-to-fix">弓具報修</a>
+
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+
+
+                        <!-- account-general -->
+                        <div class="tab-pane fade active show" id="account-general">
+                            <div class="card-body media align-items-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt
+                                    class="d-block ui-w-80">
+                                <div class="media-body ml-4">
+                                    <label class="btn btn-outline-primary">
+                                        Upload new photo
+                                        <input type="file" class="account-settings-fileinput">
+                                    </label> &nbsp;
+                                    <button type="button" class="btn btn-default md-btn-flat">Reset</button>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label">學號</label>
+                                    <input type="text" class="form-control mb-1" value="1108200XX">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">名字</label>
+                                    <input type="text" class="form-control" value="Angela Ziegler">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">E-mail</label>
+                                    <input type="text" class="form-control mb-1" value="ntutnicekyudo@gmail.com">
+                                    <div class="alert alert-warning mt-3">
+                                        Your email is not confirmed. Please check your inbox.<br>
+                                        <a href="javascript:void(0)">Resend confirmation</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">系所</label>
+                                    <input type="text" class="form-control" value="Overwatch">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- account-change-password -->
+                        <div class="tab-pane fade" id="account-change-password">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Current password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">New password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Repeat new password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- account-info -->
+                        <div class="tab-pane fade" id="account-info">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Bio</label>
+                                    <textarea class="form-control"
+                                        rows="5">Mercy’s Valkyrie Suit helps keep her close to teammates like a guardian angel; healing, resurrecting or strengthening them with the beams emanating from her Ability-mercy1 Caduceus Staff.
+                                    </textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Birthday</label>
+                                    <input type="text" class="form-control" value="May 13th, 1984">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Change</label>
+                                    <select class="custom-select">
+                                        <option>
+                                            Tank
+                                        </option>
+                                        <option selected>
+                                            Healer
+                                        </option>
+                                        <option>
+                                            Attacker
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body pb-2">
+                                <h6 class="mb-4">Contacts</h6>
+                                <div class="form-group">
+                                    <label class="form-label">Phone</label>
+                                    <input type="text" class="form-control" value="0908238062">
+                                </div>
+                                <!-- <div class="form-group">
+                                    <label class="form-label">Website</label>
+                                    <input type="text" class="form-control" value>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- account-social-links -->
+                        <div class="tab-pane fade" id="account-social-links">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Twitter</label>
+                                    <input type="text" class="form-control" value="https://twitter.com/user">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Facebook</label>
+                                    <input type="text" class="form-control" value="https://www.facebook.com/user">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Google+</label>
+                                    <input type="text" class="form-control" value>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Instagram</label>
+                                    <input type="text" class="form-control" value="https://www.instagram.com/user">
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <!-- bow info -->
+                        <div class="tab-pane fade" id="bow-info">
+                            <hr class="border-light m-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- bow1 -->
+                                    <div class="col-12">
+                                        <h5 class="text-left">弓的名稱</h5>
+                                    </div>
+                                    <!-- bow-pic -->
+                                    <div class="col-md-6">
+                                        <img src="bow.img" alt="Bow" class="bow-image img-fluid"/>
+                                    </div>
+                                    <!-- bow-details -->
+                                    <div class="col-md-6">
+                                        
+                                        <div class="bow-detail">
+                                            <span class="bow-label">公斤數:</span>
+                                            <span class="bow-data">15kg</span>
+                                        </div>
+                                        <div class="bow-detail">
+                                            <span class="bow-label">尺寸:</span>
+                                            <span class="bow-data">二尺伍</span>
+                                        </div>
+                                        <div class="bow-detail">
+                                            <span class="bow-label">外套:</span>
+                                            <span class="bow-data">紅白袍</span>
+                                        </div>
+                                        <div class="bow-detail">
+                                            <span class="bow-label">內套:</span>
+                                            <span class="bow-data">黃袍</span>
+                                        </div>
+                                        <div class="bow-detail">
+                                            <span class="bow-label">弓具狀況:</span>
+                                            <span class="bow-data">可使用</span>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <!-- bow2 -->
+                                    <div class="col-12">
+                                        <h5 class="text-left">弓的名稱2</h5>
+                                    </div>
+                                    <!-- bow-pic -->
+                                    <div class="col-md-6">
+                                        <img src="bow.img" alt="Bow" class="bow-image img-fluid"/>
+                                    </div>
+                                    <!-- bow-details -->
+                                    <div class="col-md-6">
+                                        
+                                        <div class="bow-detail">
+                                            <span class="bow-label">公斤數:</span>
+                                            <span class="bow-data">15kg</span>
+                                        </div>
+                                        <div class="bow-detail">
+                                            <span class="bow-label">尺寸:</span>
+                                            <span class="bow-data">二尺伍</span>
+                                        </div>
+                                        <div class="bow-detail">
+                                            <span class="bow-label">外套:</span>
+                                            <span class="bow-data">紅白袍</span>
+                                        </div>
+                                        <div class="bow-detail">
+                                            <span class="bow-label">內套:</span>
+                                            <span class="bow-data">黃袍</span>
+                                        </div>
+                                        <div class="bow-detail">
+                                            <span class="bow-label">弓具狀況:</span>
+                                            <span class="bow-data">可使用</span>
+                                        </div>
+                                    </div>
+
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- bow-to-fix -->
+                        <div class="tab-pane fade" id="bow-to-fix">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">選擇報修弓具種類</label>
+                                    <select class="custom-select" id="bow-type">
+                                        <option value="" selected disabled>請選擇</option>
+                                        <option value="bow">弓</option>
+                                        <option value="arrow">箭</option>
+                                        <option value="glove">手套</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- hidden list -->
+                                <div class="form-group" id="menu1" style="display:none;">
+                                    <label class="form-label">選擇要報修的弓</label>
+                                    <select class="custom-select">
+                                        <option value="" selected disabled>請選擇</option>
+                                        <option value="bow1">大刀</option>
+                                        <option value="bow2">砍刀</option>
+                                        <option value="bow3">狩獵笛</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group" id="menu2" style="display:none;">
+                                    <label class="form-label">選擇要報修的箭</label>
+                                    <select class="custom-select">
+                                        <!-- monsterhunter_rise -->
+                                    </select>
+                                </div>
+
+                                <div class="form-group" id="menu3" style="display:none;">
+                                    <label class="form-label">選擇要報修的手套</label>
+                                    <select class="custom-select">
+                                        <!-- monsterhunter_world -->
+                                    </select>
+                                </div>
+
+                                <!-- Text Input for Description -->
+                                <div class="form-group">
+                                    <label class="form-label">描述損壞情況:</label>
+                                    <textarea class="form-control" placeholder="請描述詳細的損壞情況..."></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="text-right">
+                                    <button type="submit" class="btn btn-primary">提交</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-right mt-3">
+            <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
+            <button type="button" class="btn btn-default">Cancel</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Profile_scripts.js"></script> 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>
